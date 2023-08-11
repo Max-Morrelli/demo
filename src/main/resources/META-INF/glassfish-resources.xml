@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-resource pool-name="YourDataSourceName" jndi-name="jdbc/YourDataSourceName"/>
+    <jdbc-connection-pool name="YourDataSourceName" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource">
+        <property name="URL" value="jdbc:mysql://localhost:3306/example_db"/>
+        <property name="User" value="example"/>
+        <property name="Password" value="example"/>
+        <property name="PortNumber" value="3306"/>
+        <property name="DatabaseName" value="example_db"/>
+        <property name="ServerName" value="localhost"/>
+    </jdbc-connection-pool>
+</resources>
